@@ -1,0 +1,77 @@
+*{
+    text-decoration: none;
+    list-style: none;
+}
+.logo{
+    width: 100px;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: #D3C0CD;
+
+}
+header{
+    width: 100%;
+    background-color: #E3DFFF;
+    border-radius: 5%;
+    border-color: #D3C0CD;
+    border-style: solid;
+  
+}
+body{
+    background-color: #B19994;
+    font-family: "Madimi1", sans-serif;
+}
+footer{
+    text-align: center;
+    background-color: #3D3A4B;
+    font-size: 15px;
+    border-style: none;
+}
+.headerLinks li{
+    display: inline-block;
+    text-align: center;
+}
+nav{
+    text-align: center;
+}
+@font-face{
+    font-family: "Madimi1";
+    src: url(../img/Madimi1.ttf)
+}
+h1{
+    color: #0b0b61;
+}
+h2{
+    color: #0b0b61;
+}
+.container{
+    margin: 5px;
+    max-width: 500px;
+    width: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.element{
+    margin: 10px;
+    background-color: #937666;
+    border-radius: 5%;
+}
+a{
+    color: #B19994;
+}
+.imgProductos{
+    width: 400px;
+    border-radius: 5%;
+    border-style: solid;
+    border-color: #937666;
+}
+
+.boton{
+ background-color: #B19994;
+ border-color: #3D3A4B;
+ color: #3D3A4B;
+ border-radius: 20%;
+ border-style: none;
+ margin: 2%;
+}
