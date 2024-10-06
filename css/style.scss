@@ -1,6 +1,133 @@
 $primary-color: #3498db;
 
 
-body{
-    background-color: $primary-color
+@mixin button-style($bg-color, $text-color) {
+    background-color: $bg-color;
+    color: $text-color;
+    border: none;
+    border-radius: 20%;
+    padding: 10px 15px;
+    cursor: pointer;
 }
+    
+    * {
+        text-decoration: none;
+        list-style: none;
+     }
+    
+     .logo {
+        width: 100px;
+        @include border-style(#D3C0CD);
+        border-radius: 100%;
+    }
+    
+    header {
+        width: 100%;
+        background-color: #E3DFFF;
+        @include border-style(#D3C0CD);
+    
+        h1 {
+            color: #0b0b61;
+        }
+    
+        nav {
+            text-align: center;
+    
+            .headerLinks {
+                li {
+                    display: inline-block;
+                    text-align: center;
+    
+                    a {
+                        color: #B19994;
+                        &:hover {
+                            color: #0b0b61;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    body {
+        background-color: #B19994;
+        font-family: "Madimi1", sans-serif;
+        height: 100%;
+    }
+    
+    footer {
+        text-align: center;
+        background-color: #3D3A4B;
+        font-size: 15px;
+    
+        nav {
+            ul {
+                li {
+                    display: inline-block;
+    
+                    a {
+                        color: #B19994;
+                    }
+                }
+            }
+        }
+    }
+    
+    h2 {
+        color: #0b0b61;
+    }
+    
+    .container {
+        margin: 5px;
+        max-width: 500px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+    
+    .element {
+        margin: 10px;
+        background-color: #937666;
+        @include border-style(#937666);
+    }
+    
+    .imgProductos {
+        @include responsive-img;
+    }
+    
+    .boton {
+        @include button-style(#B19994, #3D3A4B);
+        margin: 2%;
+    
+        &:hover {
+            background-color: #3D3A4B;
+            color: #B19994;
+        }
+    }
+    
+    
+    @media (max-width: 600px) {
+        body {
+            font-size: 14px;
+        }
+    
+        header {
+            text-align: center;
+        }
+    
+        .container {
+            grid-template-columns: 1fr;
+        }
+    }
+    
+    .container1 {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+$primary-color: #B19994;
+$secondary-color: #3D3A4B;
+$accent-color: #E3DFFF;
+$border-color: #D3C0CD;
+$font-family: "Madimi1", sans-serif;
+$border-radius: 5%;

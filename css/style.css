@@ -14,22 +14,34 @@ header{
     background-color: #E3DFFF;
     border-radius: 5%;
     border-color: #D3C0CD;
-    border-style: solid;
-  
+    border-style: solid;  
 }
 body{
     background-color: #B19994;
     font-family: "Madimi1", sans-serif;
+    height: 100%;
 }
 footer{
     text-align: center;
     background-color: #3D3A4B;
     font-size: 15px;
     border-style: none;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.headerLinks a{
+    transition: color 0.3s, transform 0.3s;
+}
+.headerLinks a:hover {
+    color: #3D3A4B;
+    transform: scale(1.1);
 }
 .headerLinks li{
     display: inline-block;
     text-align: center;
+    margin: 0 15px;
 }
 nav{
     text-align: center;
@@ -43,6 +55,9 @@ h1{
 }
 h2{
     color: #0b0b61;
+}
+h3{
+    color: #080849;
 }
 .container{
     margin: 5px;
@@ -60,7 +75,7 @@ h2{
 a{
     color: #B19994;
 }
-.imgProductos{
+.imgInicio{
     width: 400px;
     border-radius: 5%;
     border-style: solid;
@@ -80,4 +95,43 @@ a{
     body {
       font-size: 14px;
     }
+}
+.container1 {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.image-gallery {
+    display: flex; 
+    overflow-x: auto;
+    padding: 20px;
+    scroll-snap-type: x mandatory; 
+}
+
+.element {
+    min-width: 300px; 
+    margin-right: 10px; 
+    background-color: #fff;
+    border-radius: 5px; 
+    padding: 10px;
+    scroll-snap-align: start; 
+}
+
+.imgProductos {
+    width: 100%;
+    border-radius: 5%;
+}
+
+.boton {
+    background-color: #B19994;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+.cart-icon {
+    font-size: 20px;
+    color: #0b0b61;
+    position: relative;
 }
